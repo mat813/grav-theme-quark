@@ -19,6 +19,9 @@
                            {% if feature.text %}
                             <p>{{ feature.text }}</p>
                            {% endif %}
+                           {% if feature.markdown %}
+                            <p>{{ feature.markdown|markdown }}</p>
+                           {% endif %}
                        </div>
                    </div>
                 {% endfor %}
